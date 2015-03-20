@@ -1,0 +1,1204 @@
+
+.m-container {
+    background-color: #fff
+}
+
+#search {
+    position: relative
+}
+
+#search .search-key-form {
+    width: 95%;
+    margin: 0 auto;
+    padding: 8px 0;
+    height: 32px;
+    position: relative
+}
+
+#search .search-key {
+    width: 100%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #969696;
+    border-radius: 16px;
+    padding-left: 8px
+}
+
+#search .search-submit {
+    font-family: iconfont;
+    font-size: 20px;
+    position: absolute;
+    top: 11px;
+    right: 7px;
+    color: #969696
+}
+
+#search .search-submit:after {
+    content: "\e600"
+}
+
+#search .hot-search-box {
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+    display: none
+}
+
+#search .hot-search-box ul {
+    border-top: 1px solid #d2d2d2
+}
+
+#search .hot-search-box li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #d2d2d2;
+    padding-left: 15px
+}
+
+#search .hot-search-box a, #search .search-isfocus {
+    display: block
+}
+
+.handover {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #d2d2d2;
+    max-height: 262px;
+    overflow: hidden
+}
+
+.handover .wrap {
+    width: 100%;
+    max-width: 640px;
+    min-width: 140px;
+    margin: 0 auto;
+    position: relative
+}
+
+.handover .swipe {
+    text-align: center;
+    min-height: 100px;
+    overflow: hidden
+}
+
+@media only screen and (min-width: 320px) and (max-width: 321px) {
+    .handover {
+        height: 131px;
+        max-height: 131px
+    }
+}
+
+.handover .item {
+    float: left;
+    width: 100%;
+    position: relative
+}
+
+.handover .slider-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 0
+}
+
+.handover .slider-nav li {
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 3px;
+    background-color: #cecece;
+    line-height: 0;
+    font-size: 0;
+    padding: 0;
+    opacity: .8
+}
+
+.handover .slider-nav li.on {
+    background-color: #c7154a;
+    opacity: 1
+}
+
+.top-notice {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/notice_bg.png?ebc3db) #dc3260 no-repeat left center;
+    background-size: 100% 32px
+}
+
+.top-notice a {
+    color: #fff
+}
+
+.top-notice .wrap {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative
+}
+
+.top-notice .notice-icon {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #e8d2d8;
+    vertical-align: middle
+}
+
+.top-notice .close-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    font-size: 22px;
+    line-height: 20px;
+    color: #f1d5dc
+}
+
+.top-notice strong {
+    color: #c7154a
+}
+
+.channel {
+    border-top: 1px solid #d2d2d2;
+    padding: 10px 0 7px
+}
+
+.channel-menu {
+    overflow: hidden
+}
+
+.channel-menu li {
+    width: 25%;
+    float: left;
+    padding: 2px 0
+}
+
+.channel-menu .channel-item {
+    display: block;
+    margin: 0 auto
+}
+
+.channel-menu .channel-item .c-logo {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    display: block;
+    border: 1px solid #d41c4e;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto
+}
+
+.channel-menu .channel-item .c-logo .bubble {
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/bubble.png?ebc3db) no-repeat;
+    background-size: 27px 25px;
+    width: 27px;
+    height: 25px;
+    line-height: 20px;
+    position: absolute;
+    top: -3px;
+    left: -16px;
+    color: #fff
+}
+
+.channel-menu .channel-item .c-name {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    color: #000
+}
+
+.channel-menu .menu-new .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e608"
+}
+
+.channel-menu .menu-dermis .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e603"
+}
+
+.channel-menu .menu-brand .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e601"
+}
+
+.channel-menu .menu-category .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e605"
+}
+
+.channel-menu .menu-overseas .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e604"
+}
+
+.channel-menu .menu-gentry .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e602"
+}
+
+.channel-menu .menu-sport .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e606"
+}
+
+.channel-menu .menu-kids .c-logo:before {
+    font-family: iconfont;
+    font-size: 34px;
+    color: #d41c4e;
+    content: "\e60b"
+}
+
+.channel-menu .menu-flashbuy .c-logo {
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/icon_flashbuy.png?ebc3db) no-repeat center center;
+    background-size: 30px 30px
+}
+
+.panicbuying {
+    border-top: 1px solid #d2d2d2;
+    min-height: 120px;
+    max-height: 180px;
+    position: relative;
+    overflow: hidden
+}
+
+.panicbuying .panic-ico {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/ico_discount.png?ebc3db) no-repeat left top;
+    background-size: 50px 50px
+}
+
+.panicbuying .panic-pro-img {
+    width: 35%;
+    float: left
+}
+
+.panicbuying .panic-pro-img a {
+    display: block;
+    text-align: center
+}
+
+.panicbuying .panic-pro-img img {
+    height: 110px
+}
+
+.panicbuying .panic-pro-info {
+    width: 50%;
+    float: left;
+    height: 100%;
+    line-height: 25px;
+    padding-top: 15px;
+    font-size: 14px
+}
+
+.panicbuying .panic-pro-info .name {
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.panicbuying .panic-pro-info .price strong {
+    font-size: 16px;
+    font-weight: 700;
+    color: #d41c4e;
+    padding-right: 5px
+}
+
+.panicbuying .panic-pro-info .price s {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #969696
+}
+
+.panicbuying .countdown h4 {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 10px;
+    color: #1e1e1e
+}
+
+.panicbuying .countdown-time {
+    float: left;
+    width: 102px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #e60012;
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/countdown.png?ebc3db) no-repeat left center;
+    background-size: 102px 22px
+}
+
+.panicbuying .countdown-time span {
+    padding-left: 2px;
+    letter-spacing: 6px
+}
+
+.panicbuying .countdown-time span:nth-child(2), .panicbuying .countdown-time span:nth-child(3) {
+    padding-left: 7px
+}
+
+.panicbuying .panic-more {
+    width: 15%;
+    height: 110px;
+    float: right;
+    text-align: center;
+    line-height: 110px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    font-size: 12px
+}
+
+.panicbuying .panic-more a {
+    color: #969696
+}
+
+.panicbuying .panic-more a:after {
+    font-family: iconfont;
+    color: #969696;
+    content: "\e60e"
+}
+
+.insertbanner {
+    border-top: 1px solid #d2d2d2
+}
+
+.feat-head {
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    height: 150px
+}
+
+.feat-head .feat-tit {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 16%;
+    left: -50px;
+    background-color: #fff;
+    border: 2px solid #cccece;
+    border-radius: 51px;
+    opacity: .8;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+}
+
+.feat-head .feat-tit p {
+    margin: 0 auto;
+    width: 20px;
+    padding-left: 35px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #3c3c3c
+}
+
+.feat-fl {
+    width: 58%;
+    float: left
+}
+
+.feat-fr {
+    width: 42%;
+    float: right
+}
+
+.feat-rec {
+    width: 95%;
+    float: right;
+    border-bottom: 1px dotted #e0e0e0;
+    position: relative;
+    text-align: right
+}
+
+.feat-rec .tit {
+    width: 40px;
+    float: left;
+    padding-top: 15px;
+    text-align: left
+}
+
+.feat-rec .pic {
+    width: 75px;
+    float: right
+}
+
+.feat-sort {
+    padding: 10px 0;
+    overflow: hidden
+}
+
+.feat-sort a {
+    display: inline-block;
+    float: left;
+    margin: 0 0 10px 10px;
+    font-size: 1.071428em;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 3px;
+    color: #969696
+}
+
+.leader-tit {
+    height: 40px;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000
+}
+
+.products-list {
+    overflow: hidden
+}
+
+.products-list .product {
+    width: 49.9%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+    display: block;
+    padding: 5px;
+    font-size: 1.07142em;
+    position: relative
+}
+
+.products-list .crown-1:before, .products-list .crown-2:before, .products-list .crown-3:before {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    content: ""
+}
+
+.products-list .crown-1:before {
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/ico_crown_1.png?ebc3db) no-repeat;
+    background-size: 30px 30px
+}
+
+.products-list .crown-2:before {
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/ico_crown_2.png?ebc3db) no-repeat;
+    background-size: 30px 30px
+}
+
+.products-list .crown-3:before {
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/home/1.0.0/img/ico_crown_3.png?ebc3db) no-repeat;
+    background-size: 30px 30px
+}
+
+@media only screen and (min-width: 321px) {
+    .products-list .product {
+        width: 33.3%
+    }
+}
+
+.products-list .product .info {
+    padding: 5px 0
+}
+
+.products-list .product .info .name, .products-list .product .info .name a {
+    height: 26px;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000
+}
+
+.products-list .product .info .price {
+    padding: 2px 0
+}
+
+.products-list .product .info .price span {
+    font-size: 1.14285em;
+    color: #c6204d
+}
+
+.products-list .product .info .price s {
+    text-decoration: line-through;
+    padding-left: 3px;
+    color: #646464
+}
+
+.leaderboard .see-more {
+    text-align: center;
+    padding: 20px 0;
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    margin: 0 auto
+}
+
+.leaderboard .see-more .more-loading {
+    color: #878787;
+    vertical-align: top;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.leaderboard .see-more .more-loading:after {
+    font-family: iconfont;
+    color: #d2d2d2;
+    font-size: 28px;
+    padding-left: 5px;
+    font-weight: 400;
+    content: "\e60f"
+}
+
+.classify {
+    border-top: 1px solid #d2d2d2
+}
+
+.classify .item {
+    padding: 15px 10px;
+    overflow: hidden
+}
+
+.classify .item:nth-child(odd) {
+    background-color: #fff
+}
+
+.classify .item:nth-child(even) {
+    background-color: #f5f5f5
+}
+
+.classify .item dt {
+    padding: 3px 5px;
+    width: 20%;
+    max-width: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+}
+
+.classify .item dd {
+    width: 90%;
+    float: left
+}
+
+.classify .item dd a {
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+    color: #969696
+}
+
+.classify .item dd a.select {
+    color: #c6204d
+}
+
+.welcome-app-download {
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 10000;
+    overflow: hidden;
+    display: none
+}
+
+.welcome-app-box {
+    max-width: 640px;
+    margin: 0 auto;
+    height: 46px;
+    background-color: #666;
+    color: #fff;
+    position: relative
+}
+
+.welcome-app-box .welcome-app-logo {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 5px 10px 0 7px
+}
+
+.welcome-app-box .welcome-app-text {
+    padding-top: 7px;
+    float: left
+}
+
+.welcome-app-box .welcome-app-link {
+    float: right;
+    margin-top: 8px;
+    margin-right: 35px;
+    border-radius: 2px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 12px;
+    color: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fd2f68), color-stop(0.9, #ee1d56), to(#e10f49))
+}
+
+.welcome-app-box .welcome-app-close {
+    font-family: iconfont;
+    font-size: 20px;
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    color: #fff
+}
+
+.welcome-app-box .welcome-app-close:after {
+    content: "\e61c"
+}
+
+@media only screen and (min-width: 639px) {
+    .panicbuying .panic-ico {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px
+    }
+
+    .panicbuying .panic-pro-img img {
+        height: 140px
+    }
+
+    .panicbuying .panic-more {
+        height: 150px;
+        line-height: 150px;
+        font-size: 14px
+    }
+
+    .feat-head {
+        height: 300px
+    }
+
+    .feat-head .feat-tit {
+        width: 170px;
+        height: 170px;
+        left: -85px;
+        border-radius: 86px
+    }
+
+    .feat-rec .tit {
+        width: 80px
+    }
+
+    .feat-rec .pic {
+        width: 150px;
+        float: right
+    }
+
+    .feat-head .feat-tit p {
+        padding-left: 70px
+    }
+}
+
+body {
+    min-width: 320px;
+    max-width: 640px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: block
+}
+
+.m-container {
+    background-color: #fff
+}
+
+.filter {
+    background-color: #fff;
+    line-height: 50px;
+    height: 50px;
+    color: #1e1e1e;
+    overflow: hidden
+}
+
+.filter li {
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+.filter a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #1e1e1e
+}
+
+.filter a.f-filter .icon-rightarrow, .filter a.f-price .icon-downarrow, .filter a.f-price .icon-uparrow {
+    font-family: iconfont;
+    font-size: 18px;
+    color: #5a5a5a
+}
+
+.filter a.f-price .icon-uparrow:before {
+    content: "\e626"
+}
+
+.filter a.f-price .icon-downarrow:before {
+    content: "\e627"
+}
+
+.filter a.f-filter .icon-rightarrow:before {
+    content: "\e625"
+}
+
+.filter i.current {
+    width: 60%;
+    height: 3px;
+    position: absolute;
+    bottom: 8px;
+    left: 20%;
+    background-color: #c6204d
+}
+
+.products-list {
+    overflow: hidden
+}
+
+.products-list .product {
+    width: 49.9%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+    display: block;
+    padding: 5px;
+    font-size: 1.07142em
+}
+
+.products-list .product .pic {
+    position: relative
+}
+
+.products-list .product .tag-pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    line-height: 0
+}
+
+.products-list .product .tag-pic img {
+    width: 30px;
+    height: 30px
+}
+
+@media only screen and (min-width: 400px) {
+    .products-list .product {
+        width: 33.3%
+    }
+
+    .products-list .product .tag-pic, .products-list .product .tag-pic img {
+        width: 30px;
+        height: 30px
+    }
+}
+
+.products-list .product .info {
+    padding: 5px 0
+}
+
+.products-list .product .info .name, .products-list .product .info .name a {
+    height: 26px;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000
+}
+
+.products-list .product .info .price {
+    padding: 2px 0
+}
+
+.products-list .product .info .price span {
+    font-size: 1.14285em;
+    color: #c6204d
+}
+
+.products-list .product .info .price s {
+    text-decoration: line-through;
+    padding-left: 3px;
+    color: #646464
+}
+
+.result-empty {
+    font-size: 14px;
+    padding: 100px 0;
+    text-align: center
+}
+
+.pager {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.14285em;
+    text-align: center;
+    font-weight: 700;
+    padding: 40px 0
+}
+
+.pager ul {
+    width: 85%;
+    margin: 0 auto;
+    position: relative
+}
+
+.pager li.p-prev {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.pager li.p-center {
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 400
+}
+
+.pager li.p-center select {
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 4px;
+    height: 23px;
+    line-height: 23px;
+    -webkit-appearance: none;
+    background: 0 0;
+    position: relative;
+    z-index: 3;
+    border: none;
+    font-weight: 400;
+    color: #333
+}
+
+.pager li.p-center .page-total {
+    padding-left: 12px
+}
+
+.pager li.p-next {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.pager a {
+    display: block;
+    background-color: #f5f5f5;
+    padding: 0 10px
+}
+
+.m-sx-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    overflow: hidden
+}
+
+.m-sx {
+    float: right;
+    height: 100%;
+    width: 88%;
+    background-color: #f5f5f5
+}
+
+.sx-hd {
+    height: 35px;
+    background-color: #c6204d
+}
+
+.sx-hd a {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.2em;
+    width: 60px;
+    color: #fff
+}
+
+.sx-hd .btn-cancel {
+    float: left
+}
+
+.sx-hd .btn-submit {
+    float: right
+}
+
+.sx-bd .sx-item {
+    border-bottom: 1px solid #e1dfdf
+}
+
+.sx-bd .sx-item dt {
+    height: 44px;
+    line-height: 44px;
+    padding-left: 40px;
+    background-color: #f5f5f5;
+    position: relative;
+    font-size: 1.25em;
+    color: #3c3c3c
+}
+
+.sx-bd .sx-item dd {
+    display: none;
+    padding: 15px 10px 15px 30px;
+    background-color: #fff;
+    overflow: hidden;
+    font-size: 12px
+}
+
+.sx-bd .sx-item dd a {
+    width: 40%;
+    line-height: 28px;
+    text-align: left;
+    border: 1px solid #fff;
+    margin-right: 9%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.08em;
+    color: #646464;
+    display: block;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.sx-bd .sx-item dd a span {
+    display: block;
+    border: 1px solid #5a5a5a;
+    padding-left: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.sx-bd .sx-item dd a.select {
+    border: 1px solid #c6204d;
+    position: relative
+}
+
+.sx-bd .sx-item dd a.select:after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/list/1.0.0/img/select.png?9288d3) no-repeat;
+    background-size: 28px 28px
+}
+
+.sx-bd .sx-item dd a.select span {
+    border: 1px solid #c6204d
+}
+
+.sx-bd .sx-item dd.is-color {
+    display: none
+}
+
+.sx-bd .sx-item dd.is-color a {
+    margin: 0;
+    width: 25%;
+    text-align: center;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+    border: none
+}
+
+.sx-bd .sx-item dd.is-color a span {
+    border: none;
+    padding: 0
+}
+
+.sx-bd .sx-item dd.is-color .color-value {
+    display: block;
+    width: 43px;
+    height: 43px;
+    border-radius: 3px;
+    position: relative;
+    border: 2px solid #fff
+}
+
+.sx-bd .sx-item dd.is-color .color-text {
+    display: block;
+    width: 43px;
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    border: 2px solid #fff;
+    overflow: hidden
+}
+
+.sx-bd .sx-item dd.is-color a.select {
+    border: none;
+    box-sizing: border-box
+}
+
+.sx-bd .sx-item dd.is-color a.select .color-value {
+    border: 2px solid #c6204d;
+    position: relative
+}
+
+.sx-bd .sx-item dd.is-color a.select:after {
+    display: none
+}
+
+.sx-bd .sx-item dd.is-color a.select .color-value:after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(http://cca.mbaobao.com/static/mod/mobile/mtouch/list/1.0.0/img/select.png?9288d3) no-repeat;
+    background-size: 28px 28px
+}
+
+.sx-bd .sx-item dd.is-price {
+    border-top: 1px solid #e1dfdf;
+    background-color: #f5f5f5
+}
+
+.sx-bd .sx-item dd.is-price input {
+    width: 30%;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    background-color: #d2d2d2;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-size: 1.2em;
+    color: #3c3c3c
+}
+
+.sx-bd .sx-btn-reset {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #d2d2d2;
+    border-radius: 2px
+}
+
+.sx-bd .sx-btn-reset a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.128em;
+    color: #3c3c3c;
+    height: 40px
+}
+
+@media only screen and (min-width: 321px) {
+    .sx-bd .sx-item dd.is-color a {
+        width: 20%
+    }
+
+    .sx-bd .sx-item dd.is-color .color-text, .sx-bd .sx-item dd.is-color .color-value {
+        width: 50px;
+        height: 50px
+    }
+}
+
+.m-sx-shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #222;
+    opacity: .9;
+    filter: alpha(opacity=90)
+}
+
+.sx-bd .sx-item dt:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-width: 0 2px 2px 0;
+    border-color: #3c3c3c;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    background: 0 0;
+    left: 22px;
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg)
+}
+
+.sx-bd .sx-item dt.actived:before {
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg)
+}
+
+#J-iscroll-wrapper {
+    position: relative;
+    overflow-y: scroll
+}
+
+.nocroll {
+    overflow-y: hidden
+}
