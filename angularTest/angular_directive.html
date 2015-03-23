@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<script src="angular.min.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="MyCtrl">
+			<div>
+				Running duration is: {{runningDuration | utc | date:'HH:mm:ss'}}.
+			</div>
+			<div>
+				Running duration without style: {{runningDuration}}.
+			</div>    
+			<div>
+				Starting time utc: {{startingTime | utc | date:'HH:mm:ss'}}.
+			</div>    
+			<div>
+				Starting time: {{startingTime | date:'HH:mm:ss'}}.
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script>
+
+var myApp = angular.module('myApp',[]);
+
+myApp.filter('utc', [function() {
+    return function(date) {
+      if(angular.isNumber(date)) {
+        date = new Date(date);
+      }
+      return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(),  date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+    }   
+  } ]);
+
+function MyCtrl($scope, $timeout) {
+    $scope.startingTime = new Date();
+    $scope.runningDuration = 0;
+    
+    $scope.$watch('runningDuration', function(){
+        $timeout(function(){
+            $scope.runningDuration = new Date() - $scope.startingTime;
+        },1000);
+    });
+}
+</script>
