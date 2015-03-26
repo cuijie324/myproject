@@ -38,19 +38,23 @@
 		<script>
 			var value = {
 					name: "jie",
-					"sex": "boy",
+					sex: "boy",
 					value: "you",
 					hometown: "<b>Harbin</b>",
 					friend:{name:"zhang",home:"guangxi"},
-					"names":[
-					  {"name": "zr"},
-					  {"name": "cj"}
+					names:[
+					  {name: "zr"},
+					  {name: "cj"}
 					],
-					"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }],
-					"aFunction":function(){
+					score:[
+						{ name: "Moe" },
+						{ name: "Larry" },
+						{ name: "Curly" }
+					],
+					aFunction:function(){
 						return this.name + "_hh";
 					},
-					"func": function () {
+					func: function () {
 						return function (text, render) {
 						  return "<b>" + render(text) + "</b>";
 						}
