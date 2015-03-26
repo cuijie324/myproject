@@ -5,12 +5,13 @@
 		<script src="jquery.js"></script>
 		<script src="mustache.min.js"></script>
 		
+		<!--Target-->
 		<div id="target">Loading...</div>
 		<div id="list">list<div>
 		<div id="funcTarget">func<div>
-		<div id="partialTarget">func<div>
+		<div id="partialTarget">partial<div>
 		
-		<!-->Template<-->
+		<!--Template-->
 		<script id="template" type="x-tmpl-mustache">
 			Hello {{ name }}! Nice to meeet {{value}}, are you lived in {{{hometown}}} once?
 			{{friend.name}} and {{friend.home}} {{! ignore me, it's a comment}}
@@ -30,36 +31,30 @@
 			{{/names}}
 		</script>
 		<script id="partialChildTempt" type="x-tmpl-mustache">	
-			<strong>{{name}}</strong>
+			<strong>*{{name}}</strong><br />
 		</script>
 		
+		<!--JS-->
 		<script>
 			var value = {
 					name: "jie",
+					"sex": "boy",
 					value: "you",
 					hometown: "<b>Harbin</b>",
-					friend:{name:"zhang",home:"guangxi"}					
-					};
-					
-			var listSample = {
-				"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }],
-				"aFunction":function(){
-					return this.name + "_hh";
-				}
-				};
-				
-			var funcSample = {
-				  "name": "Tater",
-				  "sex": "boy",
-				  "func": function () {
-					return function (text, render) {
-					  return "<b>" + render(text) + "</b>";
-					}
-				  }
-				};	
-				
-			var partialSample = {
-				  "names":[{"name":"zr"},{"name":"cj"}]
+					friend:{name:"zhang",home:"guangxi"},
+					"names":[
+					  {"name": "zr"},
+					  {"name": "cj"}
+					],
+					"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }],
+					"aFunction":function(){
+						return this.name + "_hh";
+					},
+					"func": function () {
+						return function (text, render) {
+						  return "<b>" + render(text) + "</b>";
+						}
+					}					
 				};	
 				
 			function loadUser() {
@@ -71,25 +66,22 @@
 				/*
 				var listTemplate = $("#listTempt").html();
 				Mustache.parse(listTemplate);
-				var listRendered = Mustache.render(listTemplate, listSample);
+				var listRendered = Mustache.render(listTemplate, value);
 				$("#list").html(listRendered); */
 				
 				/*
 				var funcTemplate = $("#funcTempt").html();
 				Mustache.parse(funcTemplate);
-				var funcRendered = Mustache.render(funcTemplate, funcSample);
-				$("#funcTarget").html(funcRendered);*/
-				/*
-				var partialTemplate = $("#partialTempt").html();
-				Mustache.parse(partialTemplate);
-				var partialRendered = Mustache.render(partialTemplate, funcSample);
-				$("#funcTarget").html(partialRendered);*/
+				var funcRendered = Mustache.render(funcTemplate, value);
+				$("#funcTarget").html(funcRendered);
+				*/
 				
 				//var base = "<h2>Names</h2>{{#names}}{{>user}}{{/names}}";
 				//var name = "<b>{{name}}</b><br />";
 				var base = $("#partialBaseTempt").html();
-				var name = $("#partialChildTempt").html();
-				var partialRendered = Mustache.render(base, partialSample, { user: name });
+				var child = $("#partialChildTempt").html();
+				var partial = {"user": child }
+				var partialRendered = Mustache.render(base, value, partial);
 				$("#partialTarget").html(partialRendered);
 			}	
 		</script>
