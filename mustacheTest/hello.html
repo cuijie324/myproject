@@ -6,18 +6,23 @@
 		<script src="mustache.min.js"></script>
 		
 		<div id="target">Loading...</div>
-		list
 		<div id="list">list<div>
+		<div id="funcTarget">func<div>
+		
+		<!-->Template<-->
 		<script id="template" type="x-tmpl-mustache">
 			Hello {{ name }}! Nice to meeet {{value}}, are you lived in {{{hometown}}} once?
 			{{friend.name}} and {{friend.home}} {{! ignore me, it's a comment}}
 		</script>			
-		
 		<script id="listTempt" type="x-tmpl-mustache">
 			{{#score}} 
 			<b>*{{aFunction}}</b><br>
 			{{/score}}
 		</script>
+		<script id="funcTempt" type="x-tmpl-mustache">
+			{{#func}}Hi {{sex}}.{{/func}}
+		</script>
+		
 		<script>
 			var value = {
 					name: "jie",
@@ -26,12 +31,22 @@
 					friend:{name:"zhang",home:"guangxi"}					
 					};
 					
-			var listSample={
+			var listSample = {
 				"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }],
 				"aFunction":function(){
 					return this.name + "_hh";
 				}
 				};
+				
+			var funcSample = {
+				  "name": "Tater",
+				  "sex": "boy",
+				  "func": function () {
+					return function (text, render) {
+					  return "<b>" + render(text) + "</b>";
+					}
+				  }
+				};	
 				
 			function loadUser() {
 				var template=$("#template").html();
@@ -39,12 +54,17 @@
 				var rendered = Mustache.render(template, value);
 				$("#target").html(rendered);
 				
+				/*
 				var listTemplate = $("#listTempt").html();
 				Mustache.parse(listTemplate);
 				var listRendered = Mustache.render(listTemplate, listSample);
-				$("#list").html(listRendered);
-			}			
+				$("#list").html(listRendered); */
 				
+				var funcTemplate = $("#funcTempt").html();
+				Mustache.parse(funcTemplate);
+				var funcRendered = Mustache.render(funcTemplate, funcSample);
+				$("#funcTarget").html(funcRendered);
+			}	
 		</script>
 	</body>
 </html>
