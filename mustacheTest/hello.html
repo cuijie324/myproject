@@ -6,10 +6,17 @@
 		<script src="mustache.min.js"></script>
 		
 		<div id="target">Loading...</div>
-		
+		list
+		<div id="list">list<div>
 		<script id="template" type="x-tmpl-mustache">
 			Hello {{ name }}! Nice to meeet {{value}}, are you lived in {{{hometown}}} once?
 			{{friend.name}} and {{friend.home}}
+		</script>			
+		
+		<script id="listTempt" type="x-tmpl-mustache">
+			{{#score}} 
+			<b>{{name}}</b>
+			{{/score}}
 		</script>
 		<script>
 			var value = {
@@ -18,12 +25,23 @@
 					hometown: "<b>Harbin</b>",
 					friend:{name:"zhang",home:"guangxi"}					
 					};
+					
+			var listSample={
+				"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }]
+				};
+				
 			function loadUser() {
 				var template=$("#template").html();
 				Mustache.parse(template);
 				var rendered = Mustache.render(template, value);
 				$("#target").html(rendered);
-			}
+				
+				var listTemplate = $("#listTempt").html();
+				Mustache.parse(listTemplate);
+				var listRendered = Mustache.render(listTemplate, listSample);
+				$("#list").html(listRendered);
+			}			
+				
 		</script>
 	</body>
 </html>
