@@ -8,6 +8,7 @@
 		<div id="target">Loading...</div>
 		<div id="list">list<div>
 		<div id="funcTarget">func<div>
+		<div id="partialTarget">func<div>
 		
 		<!-->Template<-->
 		<script id="template" type="x-tmpl-mustache">
@@ -21,6 +22,15 @@
 		</script>
 		<script id="funcTempt" type="x-tmpl-mustache">
 			{{#func}}Hi {{sex}}.{{/func}}
+		</script>
+		<script id="partialBaseTempt" type="x-tmpl-mustache">
+			<h2>Names</h2>
+			{{#names}}
+			  {{> user}}
+			{{/names}}
+		</script>
+		<script id="partialChildTempt" type="x-tmpl-mustache">	
+			<strong>{{name}}</strong>
 		</script>
 		
 		<script>
@@ -48,6 +58,10 @@
 				  }
 				};	
 				
+			var partialSample = {
+				  "names":[{"name":"zr"},{"name":"cj"}]
+				};	
+				
 			function loadUser() {
 				var template=$("#template").html();
 				Mustache.parse(template);
@@ -60,10 +74,23 @@
 				var listRendered = Mustache.render(listTemplate, listSample);
 				$("#list").html(listRendered); */
 				
+				/*
 				var funcTemplate = $("#funcTempt").html();
 				Mustache.parse(funcTemplate);
 				var funcRendered = Mustache.render(funcTemplate, funcSample);
-				$("#funcTarget").html(funcRendered);
+				$("#funcTarget").html(funcRendered);*/
+				/*
+				var partialTemplate = $("#partialTempt").html();
+				Mustache.parse(partialTemplate);
+				var partialRendered = Mustache.render(partialTemplate, funcSample);
+				$("#funcTarget").html(partialRendered);*/
+				
+				//var base = "<h2>Names</h2>{{#names}}{{>user}}{{/names}}";
+				//var name = "<b>{{name}}</b><br />";
+				var base = $("#partialBaseTempt").html();
+				var name = $("#partialChildTempt").html();
+				var partialRendered = Mustache.render(base, partialSample, { user: name });
+				$("#partialTarget").html(partialRendered);
 			}	
 		</script>
 	</body>
