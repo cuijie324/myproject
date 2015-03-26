@@ -8,13 +8,20 @@
 		<div id="target">Loading...</div>
 		
 		<script id="template" type="x-tmpl-mustache">
-			Hello {{ name }}!
+			Hello {{ name }}! Nice to meeet {{value}}, are you lived in {{{hometown}}} once?
+			{{friend.name}} and {{friend.home}}
 		</script>
 		<script>
+			var value = {
+					name: "jie",
+					value: "you",
+					hometown: "<b>Harbin</b>",
+					friend:{name:"zhang",home:"guangxi"}					
+					};
 			function loadUser() {
 				var template=$("#template").html();
 				Mustache.parse(template);
-				var rendered = Mustache.render(template, {name:"cui"});
+				var rendered = Mustache.render(template, value);
 				$("#target").html(rendered);
 			}
 		</script>
