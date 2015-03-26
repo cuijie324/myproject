@@ -15,7 +15,7 @@
 		
 		<script id="listTempt" type="x-tmpl-mustache">
 			{{#score}} 
-			<b>{{name}}</b>
+			<b>*{{aFunction}}</b><br>
 			{{/score}}
 		</script>
 		<script>
@@ -27,7 +27,10 @@
 					};
 					
 			var listSample={
-				"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }]
+				"score":[  { "name": "Moe" },{ "name": "Larry" },{ "name": "Curly" }],
+				"aFunction":function(){
+					return this.name + "_hh";
+				}
 				};
 				
 			function loadUser() {
