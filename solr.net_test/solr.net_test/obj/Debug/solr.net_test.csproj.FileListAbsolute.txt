@@ -1,0 +1,8 @@
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\solr.net_test.exe.config
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\solr.net_test.exe
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\solr.net_test.pdb
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\HttpWebAdapters.dll
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\bin\Debug\SolrNet.dll
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\obj\Debug\solr.net_test.exe
+d:\文档\visual studio 2012\Projects\solr.net_test\solr.net_test\obj\Debug\solr.net_test.pdb
