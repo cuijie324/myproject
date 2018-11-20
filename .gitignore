@@ -4,3 +4,4 @@ require/.idea/workspace.xml
 python/.vscode
 python/learning_log/11_env
 *.pyc
+.vscode/settings.json
