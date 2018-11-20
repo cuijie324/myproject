@@ -1,3 +1,6 @@
 require/.idea/workspace.xml
 require/.idea/workspace.xml
 *.xml
+python/.vscode
+python/learning_log/11_env
+*.pyc
